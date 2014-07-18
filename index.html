@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="shortcut icon" href="/favicon.ico">
 	<title>Electrum Darkcoin Wallet</title>
 </head>
@@ -9,4 +10,104 @@
 <div id="header">
 	<h1><img src="img/electrum_banner.png" alt="Electrum-DRK"></h1>
 </div>
+<div id="content">
+<div id="column">
+	<p>Electrum-DRK is an easy-to-use <a href="https://www.darkcoin.io">Darkcoin</a>
+	client based on <a href="https://electrum.org">Electrum</a>.
+	It protects you from losing coins in a backup mistake or computer failure,
+	because your wallet can be recovered from a secret phrase
+	that you can write on paper or learn by heart.
+	There is no waiting time when you start the client,
+	because it does not download the Darkcoin blockchain.</p>
+
+	<h2 id="features">Features</h2>
+	<ul>
+	<li>Instant on: Your client does not download the blockchain, it uses a remote server.</li>
+	<li>Forgiving: Your wallet can be recovered from a secret seed.</li>
+	<li>Safe: Your seed or private keys are not sent to the server. Information received from the server is verified using <a href="https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients" target="_blank">SPV</a>.</li>
+	<li>No downtimes: Several public servers are available, you can switch instantly.</li>
+	<li>Ubiquitous: You can use the same wallet on different computers, it will auto-synchronize.</li>
+	<li>Cold Storage: You can have secure offline wallets and still safely spend from an online computer.</li>
+	<li>Open: You can export your private keys to other Darkcoin clients.</li>
+	</ul>
+
+	<h2 id="download">Download</h2>
+	<table>
+	<tr>
+		<td><img src="/img/windows.png" alt="" class="icon"> Windows</td>
+		<td>
+		Coming soon.
+		</td>
+		</tr>
+	<tr>
+		<td><img src="/img/mac.png" alt="" class="icon"> OS X</td>
+		<td>
+		Coming soon.
+		</td>
+	</tr>
+	<tr>
+		<td><img src="/img/linux.png" alt="" class="icon"> Linux</td>
+		<td>
+		Coming soon.
+		</td>
+	</tr>
+	<tr>
+		<td><img src="/img/sources.png" alt="" class="icon"> Sources</td>
+		<td>
+		Coming soon.
+		</td>
+	</tr>
+	</table>
+
+	<h2 id="community">Community</h2>
+	<ul>
+	<li>Discussion, help: <a href="https://bitcointalk.org/index.php?topic=421615.0">BitcoinTalk Forum</a></li>
+	<li>Development: <a href="https://github.com/electrum-drk/electrum-drk/">Project page on GitHub</a></li>
+	<li>Donation fund: <a href="http://chainz.cryptoid.info/drk/address.dws?Xn6JuyzwNjshUUzDTQqEv3zRFhwN575UWj.htm">Xn6JuyzwNjshUUzDTQqEv3zRFhwN575UWj</a></li>
+	</ul>
+
+	<h2 id="faq">FAQ</h2>
+	<dl>
+	<dt id="android">Is there a version of Electrum-DRK for Android?</dt>
+	<dd>Android is currently not supported.</dd>
+
+	<dt id="seed">What is the Seed?</dt>
+	<dd>Electrum-DRK uses a 128-bit random seed to generate your private keys.
+	The seed can be represented as a 12-word mnemonic code.
+	You do not need to perform regular backups, because your wallet can be
+	recovered from the seed that you can memorize or write on paper.
+
+	<dt id="gap-limit">What is the gap limit?</dt>
+	<dd>The gap limit is the maximum number of consecutive unused addresses
+	in your deterministic sequence of addresses.
+	Electrum-DRK uses a gap limit to stop looking for addresses,
+	it is set to 5 by default, so the client get all addresses
+	until 5 unused addresses are found.</dd>
+
+	<dt id="freeze-address">What does it mean to "freeze" an address?</dt>
+	<dd>When you freeze an address, the funds in that address will not be
+	used for sending Darkcoins.
+	You cannot send Darkcoins if you don't have enough funds in non-frozen addresses.</dd>
+
+	<dt id="old-address">What to do with my old Darkcoin addresses and wallet when switching to Electrum-DRK?</dt>
+	<dd>The best way to switch to Electrum-DRK is to send all the Darkcoins
+	you have on your old wallet to one of the addresses on your Electrum-DRK wallet.
+	This way you'll have all your Darkcoins secured with your seed.
+	You could import the private keys from your old client,
+	but in that case you would have to backup those keys separately,
+	as they won't become part of your Electrum-DRK seed.</dd>
+
+	<dt id="wallet-file">Where is my wallet file located?</dt>
+	<dd>A default wallet file called <kbd>default_wallet</kbd> is created
+	under the <kbd>/wallets</kbd> folder when you first run the application.
+	On Windows, this folder is located in
+	<kbd>\Users\YourUserName\AppData\Roaming\Local\Electrum-DRK</kbd>.
+	On all other operating systems, it is located in <kbd>~/.electrum-drk</kbd>.</dd>
+	</dl>
+</div>
+</div>
+<div id="footer">
+	<p></p>
+</div>
 </body>
+</html>
